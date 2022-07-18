@@ -1,0 +1,26 @@
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    # Ignore the first trigger after this repo is cloned from the template.
+    if: ${{ github.run_number > 1 && github.repository != 'compulim/template-create-react-app' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Configure user profile
+        run: |
+          git config user.email "${{ format('@{0}', github.actor) }}"
+          git config user.name "${{ format('@{0}', github.actor) }}"
+
+      - run: rm ${{ github.workflow }}
+      - run: mv README.create-react-app.md README.md
+
+      - name: Commit and push
+        run: |
+          git add --all
+          git commit --message "Showing README.md from `create-react-app`"
+          git push --set-upstream origin ${{ github.event.inputs.target-branch }}
