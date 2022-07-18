@@ -1,9 +1,10 @@
 # `create-react-app` on GitHub Actions
 
-## Setting up `create-react-app`
+## Next steps
 
-Please wait while we are setting up `create-react-app` scaffold.
+1. Enable GitHub Pages
+   1. Navigate to [GitHub Pages settings](../../settings/pages)
+   1. In the "Source" field, change the branch to `gh-pages`
+1. [Modify `App.js` to trigger the first deployment](../../edit/main/src/App.js)
 
-This page will be updated shortly.
-
-[![Set up scaffold](../../actions/workflows/set-up-scaffold.yml/badge.svg)](../../actions/workflows/set-up-scaffold.yml)
+[![Deploy to GitHub Pages](../../actions/workflows/deploy-pages.yml/badge.svg)](../../actions/workflows/deploy-pages.yml)
