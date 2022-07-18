@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/experiment-shim-dljs/static/css/main.ff9b8955.css",
+    "main.js": "/experiment-shim-dljs/static/js/main.8465dbcd.js",
+    "static/js/787.111765f0.chunk.js": "/experiment-shim-dljs/static/js/787.111765f0.chunk.js",
+    "index.html": "/experiment-shim-dljs/index.html",
+    "static/media/index.cjs": "/experiment-shim-dljs/static/media/index.cd351d7c31d0d3fccf96.cjs",
+    "main.ff9b8955.css.map": "/experiment-shim-dljs/static/css/main.ff9b8955.css.map",
+    "main.8465dbcd.js.map": "/experiment-shim-dljs/static/js/main.8465dbcd.js.map",
+    "787.111765f0.chunk.js.map": "/experiment-shim-dljs/static/js/787.111765f0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff9b8955.css",
+    "static/js/main.8465dbcd.js"
+  ]
+}
